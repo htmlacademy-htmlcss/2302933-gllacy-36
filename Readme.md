@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Petr Melnikov](https://up.htmlacademy.ru/htmlcss/36/user/2302933).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Позняк](https://htmlacademy.ru/profile/id907403).
 
 ---
 
