@@ -48,6 +48,7 @@ body {
   font-size: 16px;
   line-height: 22px;
   color: #565c66;
+  background-color: #feafc3;
 }
 
 .page-container {
@@ -56,4 +57,53 @@ body {
   max-width: 1366px;
   padding: 0 98px;
   margin: 0 auto;
+}
+
+/* ШАПКА */
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 0;
+  align-items: center;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.page-header-container {
+  display: flex;
+  gap: 16px;
+}
+
+.page-navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.page-navigation-link {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.page-phone {
+  text-decoration: none;
+  font-weight: 700;
+  color: #2d3440;
+}
+
+.search-button {
+  border: none;
+  cursor: pointer;
+  background: rgba(252, 252, 252, 0.3);
+  border-radius: 27px;
+  width: 32px;
+  height: 32px;
+
 }
