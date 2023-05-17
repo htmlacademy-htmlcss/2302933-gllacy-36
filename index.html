@@ -11,12 +11,14 @@
   <div class="page-container">
     <header class="page-header">
       <div class="page-header-container">
-        <a class="logo-link">
-          <img class="logo" src="#" alt="Логотип.">
+        <a class="logo-link" href="#">
+          <img class="logo" src="./images/logo/logo.svg" alt="Логотип." width="137" height="56">
         </a>
         <nav class="page-navigation">
           <ul class="page-navigation-list">
-            <li class="page-navigation-item">
+            <li class="page-navigation-item catalog">
+              <button class="catalog-button" type="button">Каталог</button>
+              <div class="catalog-menu popup"></div>
             </li>
             <li class="page-navigation-item">
               <a class="page-navigation-link" href="#">Доставка и оплата</a>
@@ -31,7 +33,7 @@
         <a class="page-phone" href="tel:78005558628">+7 800 555-86-28</a>
         <div class="search">
           <button class="search-button" type="button" aria-label="Поиск по сайту."></button>
-          <form class="search-form" href="#" method="post">
+          <form class="search-form popup" href="#" method="post">
             <label class="search-label">
               <input class="search-input" type="search">
             </label>
@@ -39,11 +41,11 @@
         </div>
         <div class="login">
           <button class="login-button" type="button">Вход</button>
-          <div class="login-content"></div>
+          <div class="login-content popup"></div>
         </div>
         <div class="cart">
           <button class="cart-button" type="button" aria-label="Корзина."></button>
-          <div class="cart-content"></div>
+          <div class="cart-content popup"></div>
         </div>
       </div>
     </header>

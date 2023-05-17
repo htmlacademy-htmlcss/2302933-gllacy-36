@@ -59,6 +59,10 @@ body {
   margin: 0 auto;
 }
 
+.popup {
+  display: none;
+}
+
 /* ШАПКА */
 
 .page-header {
@@ -72,8 +76,13 @@ body {
   text-decoration: none;
 }
 
+.logo {
+  display: block;
+}
+
 .page-header-container {
   display: flex;
+  align-items: center;
   gap: 16px;
 }
 
@@ -92,6 +101,21 @@ body {
   color: #2d3440;
 }
 
+.catalog-button {
+  cursor: pointer;
+  padding: 8px 38px 8px 16px;
+  border: none;
+  background-color: transparent;
+  display: block;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+  background-image: url("../images/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
 .page-phone {
   text-decoration: none;
   font-weight: 700;
@@ -100,10 +124,10 @@ body {
 
 .search-button {
   border: none;
+  padding: 0;
   cursor: pointer;
   background: rgba(252, 252, 252, 0.3);
   border-radius: 27px;
   width: 32px;
   height: 32px;
-
 }
