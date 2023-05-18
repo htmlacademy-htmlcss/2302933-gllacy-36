@@ -306,3 +306,55 @@ body {
   margin: 0 auto 56px;
   max-width: 550px;
 }
+
+/* ПРЕИМУЩЕСТВА */
+
+.advantages {
+  background-image: url("../images/advantages/waffle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.background-container {
+  border-radius: 16px;
+  background-color: #ffffff;
+  padding: 56px 40px;
+}
+
+.advantages-title {
+  margin-bottom: 56px;
+}
+
+.advantages-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 505px);
+  gap: 40px 32px;
+}
+
+.advantages-card {
+  padding-left: 64px;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+.advatanges-card-icecream {
+  background-image: url("../images/advantages/ice-cream.svg");
+}
+
+.advatanges-card-quality {
+  background-image: url("../images/advantages/leaf.svg");
+}
+
+.advantages-card-farm {
+  background-image: url("../images/advantages/farm.svg");
+}
+
+.advantages-card-temperature {
+  background-image: url("../images/advantages/temperature.svg");
+}
+
+.advantages-card-description {
+  margin: 0;
+}
