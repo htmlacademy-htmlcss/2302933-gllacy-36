@@ -89,6 +89,48 @@ body {
   color: #2d3440;
 }
 
+.main-button {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 12px 32px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  color: #2d3440;
+  background-color: #fcfcfc;
+  border-radius: 26px;
+  text-decoration: none;
+  outline: 4px solid rgba(252, 252, 252, 0.4);
+  box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
+  transition: all .2s ease;
+}
+
+.main-button:hover {
+  background-color: rgba(252, 252, 252, 0.4);
+  outline-color: #fcfcfc;
+}
+
+.main-button:active {
+  background-color: #fcfcfc;
+  outline: 2px solid #2d3440;
+}
+
+.main-button:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  outline: 2px solid #2d3440;
+  outline-offset: -2px;
+}
+
+.main-button:disabled {
+  background-color: #e7e7e7;
+  outline-color: rgba(252, 252, 252, 0.4);
+  font-weight: 400;
+  color: #b9b9b9;
+  pointer-events: none;
+}
+
 /* ШАПКА */
 
 .page-header {
