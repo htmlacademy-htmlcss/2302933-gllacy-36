@@ -17,7 +17,7 @@
               <img class="logo" src="./images/logo/logo.svg" alt="Логотип." width="137" height="56">
             </a>
           </li>
-          <li class="page-navigation-item catalog">
+          <li class="page-navigation-item catalog popup-container">
             <button class="catalog-button page-navigation-link" type="button">Каталог</button>
             <div class="catalog-menu popup"></div>
           </li>
@@ -31,7 +31,7 @@
       </nav>
       <div class="page-user-menu">
         <a class="page-phone" href="tel:78005558628">+7 800 555-86-28</a>
-        <div class="search">
+        <div class="search popup-container">
           <button class="search-button" type="button" aria-label="Поиск."></button>
           <form class="search-form popup" action="#" method="post">
             <div class="search-form-container">
@@ -41,18 +41,57 @@
             </div>
           </form>
         </div>
-        <div class="login">
+        <div class="login popup-container">
           <button class="login-button" type="button">Вход</button>
-          <div class="login-content popup"></div>
+          <div class="login-content-container popup">
+            <span class="login-title">Личный кабинет</span>
+            <form class="login-form" action="#" method="post">
+              <label class="login-label">
+                <input class="login-input" type="email" name="user-email" placeholder="email@example.com" aria-label="Введите email.">
+              </label>
+              <label class="login-label">
+                <input class="login-input" type="password" name="user-password" placeholder="••••••" aria-label="Введите пароль.">
+              </label>
+              <a class="login button" href="#">Войти</a>
+              <a class="login-link forgot-password" href="#">Забыли пароль?</a>
+              <a class="login-link registration" href="#">Регистрация</a>
+            </form>
+          </div>
         </div>
-        <div class="cart">
+        <div class="cart popup-container">
           <button class="cart-button" type="button" aria-label="Корзина." data-counter="2 товара"></button>
-          <div class="cart-content popup"></div>
+          <div class="cart-content popup">
+            <span class="cart-title">Корзина</span>
+            <ul class="cart-products">
+              <li class="cart-product">
+                <img class="cart-product-image" src="./images/ice-creams/raspberry.jpg" alt="Мороженое малинка.">
+                <div class="cart-product-container">
+                  <a class="cart-product-link" href="#">Малинка</a>
+                  <span class="cart-product-details">1 кг х 310 ₽</span>
+                </div>
+                <span class="cart-product-price">310 ₽</span>
+                <button class="cart-product-button" type="button" aria-label="Удалить из корзины."></button>
+              </li>
+              <li class="cart-product">
+                <img class="cart-product-image" src="./images/ice-creams/bubble-gum.jpg" alt="Мороженое бабл-гам.">
+                <div class="cart-product-container">
+                  <a class="cart-product-link" href="#">Бабл-гам</a>
+                  <span class="cart-product-details">1,5 кг х 320 ₽</span>
+                </div>
+                <span class="cart-product-price">480 ₽</span>
+                <button class="cart-product-button" type="button" aria-label="Удалить из корзины."></button>
+              </li>
+            </ul>
+            <div class="cart-bottom">
+              <a class="button" href="#">Оформить заказ</a>
+              <span class="cart-product-price price-all">Итого: 790 ₽</span>
+            </div>
+          </div>
         </div>
       </div>
     </header>
     <main class="index-main page-main">
-      <h1 class="visually-hidden">Магазин Глейси</h1>
+      <h1 class="visually-hidden">Магазин мороженого Глейси</h1>
       <section class="slider">
         <div class="slider-container">
           <ul class="slides">
