@@ -50,6 +50,7 @@ body {
   color: #565c66;
   background-color: #feafc3;
   transition: background-color .3s ease;
+  height: 100%;
 }
 
 .visually-hidden {
@@ -67,6 +68,7 @@ body {
 }
 
 .page-container {
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   max-width: 1366px;

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Магазин мороженого Глейси.">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <title>Gllacy</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <div class="page-container">
+    <header class="page-header">
+      <nav class="page-navigation">
+        <ul class="page-navigation-list">
+          <li class="page-navigation-item">
+            <a class="logo-link" href="index.html">
+              <img class="logo" src="./images/logo/logo.svg" alt="Логотип." width="137" height="56">
+            </a>
+          </li>
+          <li class="page-navigation-item catalog popup-container">
+            <button class="catalog-button page-navigation-link" type="button">Каталог</button>
+            <div class="catalog-menu popup">
+              <a class="catalog-menu-link" href="catalog.html">Сливочное</a>
+              <a class="catalog-menu-link" href="#">Щербеты</a>
+              <a class="catalog-menu-link" href="#">Фруктовый лед</a>
+              <a class="catalog-menu-link" href="#">Мелорин</a>
+            </div>
+          </li>
+          <li class="page-navigation-item">
+            <a class="page-navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="page-navigation-item">
+            <a class="page-navigation-link" href="#">О компании</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="page-user-menu">
+        <a class="page-phone" href="tel:78005558628">+7 800 555-86-28</a>
+        <div class="search popup-container">
+          <button class="search-button" type="button" aria-label="Поиск."></button>
+          <form class="search-form popup" action="#" method="post">
+            <div class="search-form-container">
+              <label class="search-label" for="search"></label>
+              <input class="search-input main-input" type="text" id="search" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту." required>
+              <button class="search-reset-button" type="reset" aria-label="Стереть."></button>
+            </div>
+          </form>
+        </div>
+        <div class="login popup-container">
+          <button class="login-button" type="button">Вход</button>
+          <div class="login-content-container popup">
+            <span class="login-title">Личный кабинет</span>
+            <form class="login-form" action="#" method="post">
+              <label class="login-label">
+                <input class="login-input main-input" type="email" name="user-email" placeholder="email@example.com" aria-label="Введите email.">
+              </label>
+              <label class="login-label">
+                <input class="login-input main-input" type="password" name="user-password" placeholder="••••••" aria-label="Введите пароль.">
+              </label>
+              <button class="button-login button" type="button">Войти</button>
+              <div class="login-links-container">
+                <a class="login-link forgot-password" href="#">Забыли пароль?</a>
+                <a class="login-link registration" href="#">Регистрация</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="cart popup-container">
+          <button class="cart-button" type="button" aria-label="Корзина." data-counter="2 товара"></button>
+          <div class="cart-content popup">
+            <span class="cart-title">Корзина</span>
+            <ul class="cart-products">
+              <li class="cart-product">
+                <img class="cart-product-image" src="./images/ice-creams/raspberry.jpg" alt="Мороженое малинка.">
+                <div class="cart-product-container">
+                  <a class="cart-product-link" href="#">Малинка</a>
+                  <span class="cart-product-details">1 кг х 310 ₽</span>
+                </div>
+                <span class="cart-product-price">310 ₽</span>
+                <button class="cart-product-button" type="button" aria-label="Удалить из корзины."></button>
+              </li>
+              <li class="cart-product">
+                <img class="cart-product-image" src="./images/ice-creams/bubble-gum.jpg" alt="Мороженое бабл-гам.">
+                <div class="cart-product-container">
+                  <a class="cart-product-link" href="#">Бабл-гам</a>
+                  <span class="cart-product-details">1,5 кг х 320 ₽</span>
+                </div>
+                <span class="cart-product-price">480 ₽</span>
+                <button class="cart-product-button" type="button" aria-label="Удалить из корзины."></button>
+              </li>
+            </ul>
+            <div class="cart-bottom">
+              <a class="button" href="#">Оформить заказ</a>
+              <span class="cart-product-price price-all">Итого: 790 ₽</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="page-main">
+    </main>
+    <footer class="footer">
+      <div class="socials">
+        <a class="social-link" href="https://t.me/htmlacademy" aria-label="Мы в телеграмме."></a>
+        <a class="social-link" href="https://vk.com/htmlacademy" aria-label="Мы во вконтакте."></a>
+        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на ютубе."></a>
+      </div>
+      <div class="supplier-menu">
+        <h2 class="supplier-menu-title">Для поставщиков</h2>
+        <a class="supplier-menu-link" href="#">Наши документы</a>
+        <a class="supplier-menu-link" href="#">О производстве</a>
+        <a class="supplier-menu-link" href="#">Экологические стандарты</a>
+      </div>
+      <div class="footer-right-column">
+        <a class="logo-link" href="https://htmlacademy.ru/">
+          <img class="logo" src="./images/logo/htmlacademy.svg" alt="Логотип htmlacademy." width="93" height="27">
+        </a>
+        <span class="footer-right-column-text">Сделано в <a href="https://htmlacademy.ru/">.html academy</a> © 2021</span>
+      </div>
+    </footer>
+  </div>
+<script src="./js/index.js"></script>
+</body>
+</html>
