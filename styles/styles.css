@@ -192,8 +192,8 @@ body {
   display: block;
 }
 
-.page-input {
-  border: 1px solid #B9B9B9;
+.main-input {
+  border: 1px solid #b9b9b9;
   border-radius: 4px;
   background-color: #ffffff;
   padding: 13px 15px;
@@ -201,6 +201,27 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
+  transition: border-color .2s ease;
+}
+
+.main-input::placeholder {
+  color: #b9b9b9;
+}
+
+.main-input:hover {
+  border-color: #2d3440;
+}
+
+.main-input:focus {
+  outline: 2px solid #2d3440;
+  outline-offset: -1px;
+}
+
+.main-input:disabled {
+  color: rgba(45, 52, 64, 0.65);
+  background-color: #e7e7e7;
+  border-color: #b9b9b9;
+  pointer-events: none;
 }
 
 /* ШАПКА */
@@ -317,10 +338,6 @@ body {
   padding: 13px 45px 13px 15px;
 }
 
-.search-input::placeholder {
-  color: #b9b9b9;
-}
-
 .search-reset-button {
   display: none;
   position: absolute;
@@ -389,10 +406,6 @@ body {
 
 .login-input {
   width: 100%;
-}
-
-.login-input::placeholder {
-  opacity: 0.8;
 }
 
 .login-link {
