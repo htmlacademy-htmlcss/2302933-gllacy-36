@@ -192,6 +192,17 @@ body {
   display: block;
 }
 
+.page-input {
+  border: 1px solid #B9B9B9;
+  border-radius: 4px;
+  background-color: #ffffff;
+  padding: 13px 15px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
 /* ШАПКА */
 
 .page-header {
@@ -303,13 +314,7 @@ body {
 .search-input {
   appearance: none;
   width: 100%;
-  padding: 14px 45px 14px 16px;
-  border: 1px solid #b9b9b9;
-  border-radius: 4px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #2d3440;
+  padding: 13px 45px 13px 15px;
 }
 
 .search-input::placeholder {
@@ -383,14 +388,6 @@ body {
 }
 
 .login-input {
-  border: 1px solid #B9B9B9;
-  border-radius: 4px;
-  background-color: #ffffff;
-  padding: 14px 16px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
-  color: #2d3440;
   width: 100%;
 }
 
@@ -922,12 +919,6 @@ body {
 }
 
 .subscription-input {
-  border: 1px solid #b9b9b9;
-  border-radius: 4px;
-  padding: 14px 16px;
-  font-family: "Inter", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
   width: 100%;
 }
 
@@ -944,8 +935,17 @@ body {
   justify-content: space-between;
 }
 
+.delivery-title {
+  text-align: start;
+  margin-bottom: 24px;
+}
+
+.delivery-description {
+  margin: 0;
+}
+
 .delivery-text-container {
-  max-width: 400px;
+  max-width: 380px;
 }
 
 .delivery-form-container {
@@ -954,6 +954,45 @@ body {
   box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
   border-radius: 8px;
   background-color: #fcfcfc;
+}
+
+.delivery-form-text {
+  margin: 0 0 32px;
+}
+
+.delivery-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.delivery-inputs-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  gap: 16px;
+  max-width: 420px;
+}
+
+.delivery-label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.delivery-phone {
+  flex-grow: 1;
+}
+
+.delivery-date {
+  max-width: 117px;
+}
+
+.delivery-button {
+  align-self: center;
+  margin-top: 32px;
 }
 
 .contacts {
@@ -1065,4 +1104,97 @@ body {
 .footer-right-column-text a {
   color: inherit;
   text-underline-offset: 3px;
+}
+
+/* МОДАЛЬНОЕ ОКНО */
+
+.modal-container {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: rgba(45, 52, 64, 0.3);
+}
+
+.modal {
+  position: relative;
+  width: 570px;
+  margin: auto;
+  padding: 64px 64px 66px 64px;
+  background-color: #fcfcfc;
+  box-shadow: 0 15px 40px rgba(45, 52, 64, 0.12);
+  border-radius: 8px;
+}
+
+.modal-close-button {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  cursor: pointer;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  background-image: url("../images/icons/cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: opacity .3s ease;
+}
+
+.modal-close-button:hover {
+  opacity: 0.6;
+}
+
+.modal-close-button:active {
+  opacity: 0.3;
+}
+
+.modal-close-button:focus-visible {
+  outline: 2px solid #2d3440;
+}
+
+.modal-close-button:disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
+.modal-title {
+  display: block;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2d3440;
+  margin: 0 0 32px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-label:not(:last-of-type) {
+  margin-bottom: 16px;
+}
+
+.modal-input {
+  width: 100%;
+}
+
+.modal-textarea {
+  display: block;
+  resize: none;
+  height: 149px;
+  width: 100%;
+}
+
+.modal-button {
+  margin-top: 32px;
+  align-self: flex-end;
+}
+
+.hidden {
+  display: none;
 }

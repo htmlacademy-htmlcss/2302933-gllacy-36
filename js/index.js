@@ -1,3 +1,19 @@
+// МОДАЛЬНОЕ ОКНО
+
+const modalOpen = document.querySelector('.contacts-button');
+const modalClose = document.querySelector('.modal-close-button');
+const modal = document.querySelector('.modal-container');
+
+modalOpen.addEventListener('click', () => {
+  modal.classList.remove('hidden');
+});
+
+modalClose.addEventListener('click', () => {
+  modal.classList.add('hidden');
+});
+
+
+
 // СЛАЙДЕР
 
 const slidesTabButtons = document.querySelectorAll('.slider-pagination-button');
