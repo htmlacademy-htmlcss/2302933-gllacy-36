@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glacy</title>
+  <title>Gllacy</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
@@ -52,9 +52,11 @@
               <label class="login-label">
                 <input class="login-input main-input" type="password" name="user-password" placeholder="••••••" aria-label="Введите пароль.">
               </label>
-              <a class="login button" href="#">Войти</a>
-              <a class="login-link forgot-password" href="#">Забыли пароль?</a>
-              <a class="login-link registration" href="#">Регистрация</a>
+              <button class="button-login button" type="button">Войти</button>
+              <div class="login-links-container">
+                <a class="login-link forgot-password" href="#">Забыли пароль?</a>
+                <a class="login-link registration" href="#">Регистрация</a>
+              </div>
             </form>
           </div>
         </div>
@@ -293,7 +295,7 @@
           <input class="modal-input main-input" type="email" name="user-email" placeholder="email@example.com" aria-label="Введите ваш email.">
         </label>
         <label class="modal-label">
-          <textarea class="modal-textarea page-input" name="user-text" placeholder="В свободной форме" aria-label="Введите ваш текст в свободной форме."></textarea>
+          <textarea class="modal-textarea main-input" name="user-text" placeholder="В свободной форме" aria-label="Введите ваш текст в свободной форме."></textarea>
         </label>
         <button class="modal-button button" type="button">Отправить</button>
       </form>

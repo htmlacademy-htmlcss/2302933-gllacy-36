@@ -398,14 +398,25 @@ body {
 
 .login-label {
   width: 100%;
+  margin-bottom: 16px;
 }
 
-.login-label:not(:last-of-type) {
-  margin-bottom: 16px;
+.login-label:last-of-type {
+  margin-bottom: 32px;
+}
+
+.button-login {
+  margin-right: 23px;
 }
 
 .login-input {
   width: 100%;
+}
+
+.login-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 
 .login-link {
@@ -1216,8 +1227,12 @@ body {
   flex-direction: column;
 }
 
-.modal-label:not(:last-of-type) {
+.modal-label {
   margin-bottom: 16px;
+}
+
+.modal-label:last-of-type {
+  margin-bottom: 32px;
 }
 
 .modal-input {
@@ -1232,7 +1247,6 @@ body {
 }
 
 .modal-button {
-  margin-top: 32px;
   align-self: flex-end;
 }
 
