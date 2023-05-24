@@ -86,9 +86,9 @@ body {
 
 .title {
   margin: 0;
+  font-weight: 900;
   font-size: 32px;
   line-height: 46px;
-  text-align: center;
   color: #2d3440;
 }
 
@@ -749,6 +749,7 @@ body {
 /* ПРОМО БЛОК */
 
 .promo-title {
+  text-align: center;
   margin: 0 auto 55px;
   max-width: 450px;
 }
@@ -792,6 +793,7 @@ body {
 /* ПОПУЛЯРНОЕ */
 
 .popular-title {
+  text-align: center;
   margin: 0 auto 56px;
   max-width: 550px;
 }
@@ -897,6 +899,7 @@ body {
 }
 
 .advantages-title {
+  text-align: center;
   margin-bottom: 56px;
 }
 
@@ -1021,7 +1024,6 @@ body {
 }
 
 .delivery-title {
-  text-align: start;
   margin-bottom: 24px;
 }
 
@@ -1281,6 +1283,43 @@ body {
 
 .modal-button {
   align-self: flex-end;
+}
+
+/* КАТАЛОГ */
+
+.breadcrumbs {
+  padding-top: 32px;
+}
+
+.breadcrumbs-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 0;
+  margin-bottom: 16px;
+}
+
+.breadcrumbs-item:not(:last-child) {
+  padding-right: 28px;
+  background-image: url("../images/icons/two-arrows-right.svg");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+
+.breadcrumbs-item-link {
+  display: block;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2d3440;
+}
+
+.breadcrumbs-item-link-current {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .hidden {
