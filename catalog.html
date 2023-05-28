@@ -45,7 +45,7 @@
         <a class="page-phone" href="tel:78005558628">+7 800 555-86-28</a>
         <div class="search popup-container">
           <button class="search-button" type="button" aria-label="Поиск."></button>
-          <form class="search-form popup" action="#" method="post">
+          <form class="search-form popup" action="https://echo.htmlacademy.ru/" method="post">
             <div class="search-form-container">
               <label class="search-label" for="search"></label>
               <input class="search-input main-input" type="text" id="search" name="search" placeholder="Поиск по сайту" aria-label="Поиск по сайту." required>
@@ -57,14 +57,14 @@
           <button class="login-button" type="button">Вход</button>
           <div class="login-content-container popup">
             <span class="login-title">Личный кабинет</span>
-            <form class="login-form" action="#" method="post">
+            <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="login-label">
                 <input class="login-input main-input" type="email" name="user-email" placeholder="email@example.com" aria-label="Введите email.">
               </label>
               <label class="login-label">
                 <input class="login-input main-input" type="password" name="user-password" placeholder="••••••" aria-label="Введите пароль.">
               </label>
-              <button class="button-login button" type="button">Войти</button>
+              <button class="button-login button" type="submit">Войти</button>
               <div class="login-links-container">
                 <a class="login-link forgot-password" href="#">Забыли пароль?</a>
                 <a class="login-link registration" href="#">Регистрация</a>
@@ -120,7 +120,7 @@
         <h1 class="title">Сливочное мороженое</h1>
       </section>
       <section class="filter">
-        <form class="filter-form" action="#" method="post">
+        <form class="filter-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="filter-container">
             <legend class="filter-container-title">Сортировка:</legend>
             <select class="filter-select">
@@ -133,22 +133,8 @@
             <legend class="filter-container-title">Цена: 100 ₽ – 500 ₽</legend>
             <div class="range">
               <div class="range-scale"></div>
-              <div class="range-container range-from" style="left: -12px;">
-                <button class="range-toggle" type="button">
-                  <span class="visually-hidden">Изменить минимальную цену.</span>
-                </button>
-                <label>
-                  <input class="range-input-from range-input" type="text" name="range-input-from" value="" style="width: 30px;" placeholder="от 0"  required>
-                </label>
-              </div>
-              <div class="range-container range-to" style="right: 50px;">
-                <button class="range-toggle" type="button">
-                  <span class="visually-hidden">Изменить максимальную цену.</span>
-                </button>
-                <label>
-                  <input class="range-input-to range-input" type="text" name="range-input-to" value="" style="width: 55px;" placeholder="до 5000" required>
-                </label>
-              </div>
+              <button class="range-toggle" type="button" style="left: 24px;" aria-label="Изменить минимальную цену."></button>
+              <button class="range-toggle" type="button" style="right: 52px;" aria-label="Изменить максимальную цену."></button>
             </div>
           </fieldset>
           <fieldset class="filter-container">
@@ -224,9 +210,8 @@
               </li>
             </ul>
           </fieldset>
-          <button class="filter-form-button main-button" type="button">Применить</button>
+          <button class="filter-form-button" type="submit">Применить</button>
         </form>
-
       </section>
       <section class="products-section">
         <ul class="products">
@@ -343,7 +328,7 @@
           <button class="pagination-show-more main-button" type="button">Показать еще</button>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-previous">
-              <a class="pagination-previous" href="#" aria-label="Назад."></a>
+              <button class="pagination-previous" type="button" aria-label="Назад."></button>
             </li>
             <li class="pagination-item">
               <a class="pagination-link pagination-link-active" href="#">1</a>
@@ -361,7 +346,7 @@
               <a class="pagination-link" href="#">5</a>
             </li>
             <li class="pagination-item pagination-item-next">
-              <a class="pagination-next" href="#" aria-label="Вперёд."></a>
+              <button class="pagination-next" type="button" aria-label="Вперёд."></button>
             </li>
           </ul>
         </div>
@@ -369,9 +354,9 @@
     </main>
     <footer class="footer">
       <div class="socials">
-        <a class="social-link" href="https://t.me/htmlacademy" aria-label="Мы в телеграмме."></a>
-        <a class="social-link" href="https://vk.com/htmlacademy" aria-label="Мы во вконтакте."></a>
-        <a class="social-link" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на ютубе."></a>
+        <a class="social-link social-telegram" href="https://t.me/htmlacademy" aria-label="Мы в телеграмме."></a>
+        <a class="social-link social-vkontakte" href="https://vk.com/htmlacademy" aria-label="Мы во вконтакте."></a>
+        <a class="social-link social-youtube" href="https://www.youtube.com/user/htmlacademyru" aria-label="Мы на ютубе."></a>
       </div>
       <div class="supplier-menu">
         <h2 class="supplier-menu-title">Для поставщиков</h2>
