@@ -236,7 +236,22 @@ body {
 }
 
 .logo-link {
+  display: block;
   text-decoration: none;
+  transition: opacity .2s ease;
+}
+
+.logo-link:hover {
+  opacity: 0.6;
+}
+
+.logo-link:active {
+  opacity: 0.3;
+}
+
+.logo-link:focus-visible {
+  outline: 2px solid #2d3440;
+  outline-offset: 2px;
 }
 
 .logo {
@@ -354,7 +369,7 @@ body {
 .search-button::before {
   content: "";
   position: absolute;
-  top: 8px;
+  top: 7px;
   left: 8px;
   width: 16px;
   height: 16px;
@@ -1262,7 +1277,7 @@ body {
   display: block;
   width: 24px;
   height: 24px;
-  border-radius: 24px;
+  border-radius: 50%;
   outline: 2px solid rgba(252, 252, 252, 0.3);
 }
 
@@ -1275,7 +1290,6 @@ body {
   height: 24px;
   background-color: #fcfcfc;
   border-radius: 50%;
-  fill: none;
 }
 
 .social-telegram::before {
@@ -1318,11 +1332,26 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
+  transition: opacity .2s ease;
+}
+
+.supplier-menu-link:hover {
+  opacity: 0.6;
+}
+
+.supplier-menu-link:active {
+  opacity: 0.3;
+}
+
+.supplier-menu-link:focus-visible {
+  outline: 2px solid #2d3440;
+  outline-offset: 2px;
 }
 
 .footer-right-column {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 14px;
 }
 
@@ -1332,9 +1361,23 @@ body {
   color: #2d3440;
 }
 
-.footer-right-column-text a {
+.footer-right-column-link {
   color: inherit;
   text-underline-offset: 3px;
+  transition: opacity .2s ease;
+}
+
+.footer-right-column-link:hover {
+  opacity: 0.6;
+}
+
+.footer-right-column-link:active {
+  opacity: 0.3;
+}
+
+.footer-right-column-link:focus-visible {
+  outline: 2px solid #2d3440;
+  outline-offset: 2px;
 }
 
 /* МОДАЛЬНОЕ ОКНО */
@@ -1617,6 +1660,7 @@ body {
   line-height: 20px;
   color: #2d3440;
   align-self: flex-end;
+  transition: all .2s ease;
 }
 
 .filter-form-button:hover {
