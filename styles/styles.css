@@ -264,6 +264,8 @@ body {
   list-style: none;
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 600px;
 }
 
 .page-navigation-link {
@@ -308,7 +310,7 @@ body {
   color: #2d3440;
   background-image: url("../images/icons/arrow-down.svg");
   background-repeat: no-repeat;
-  background-position: right 10px center;
+  background-position: right 16px center;
 }
 
 .catalog-menu {
@@ -345,7 +347,9 @@ body {
 .page-user-menu {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 16px;
+  max-width: 500px;
 }
 
 .page-phone {
@@ -655,14 +659,14 @@ body {
 
 .slides {
   margin: 0;
-  padding: 0;
+  padding: 21px 0 2px;
   list-style: none;
   display: flex;
   justify-content: space-between;
 }
 
 .slide {
-  padding: 21px 0 0 0;
+  padding: 0;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -852,11 +856,15 @@ body {
 }
 
 .promo-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
   background-color: #ff7799;
   border-radius: 16px;
   padding: 36px 230px 36px 36px;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: right bottom;
 }
 
 .promo-card-raspberry {
@@ -869,7 +877,7 @@ body {
 }
 
 .promo-card-title {
-  margin: 0 0 28px;
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -878,7 +886,11 @@ body {
 
 .promo-card-description {
   color: #2d3440;
-  margin: 0 0 28px;
+  margin: 0;
+}
+
+.promo-card-button {
+  margin-top: auto;
 }
 
 /* ПОПУЛЯРНОЕ */
@@ -1111,7 +1123,7 @@ body {
   max-width: 570px;
   display: flex;
   flex-direction: column;
-  gap: 42px;
+  gap: 44px;
 }
 
 .subscription::before {
@@ -1231,6 +1243,7 @@ body {
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   max-width: 343px;
 }
 
@@ -1258,6 +1271,7 @@ body {
 
 .contacts-schedule {
   margin-bottom: 32px;
+  font-size: 14px;
 }
 
 /* ПОДВАЛ */
