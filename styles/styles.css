@@ -644,7 +644,7 @@ body {
 
 .slides {
   margin: 0;
-  padding: 21px 0 2px;
+  padding: 21px 0 0;
   list-style: none;
   display: flex;
   gap: 50px;
@@ -1016,6 +1016,7 @@ body {
   background-size: cover;
   overflow: hidden;
   border-radius: 16px;
+  background-color: #f1e7d3;
 }
 
 .advantages::before {
@@ -1082,6 +1083,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  background-color: #fcfcfc;
 }
 
 .news-text {
@@ -1110,6 +1112,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 44px;
+  background-color: #edf1f5;
 }
 
 .subscription::before {
@@ -1153,6 +1156,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background-color: #f4f4f4;
 }
 
 .delivery-title {
@@ -1240,7 +1244,7 @@ body {
 
 .tooltip-text {
   display: none;
-  width: 200px;
+  width: 162px;
   position: absolute;
   top: -11px;
   left: calc(100% + 12px);
@@ -1269,6 +1273,10 @@ body {
   z-index: -2;
 }
 
+.tooltip-text:hover {
+  display: block;
+}
+
 .tooltip:focus-within .tooltip-text {
   display: block;
 }
@@ -1288,6 +1296,7 @@ body {
   background-image: url("../images/contacts/ice-creams.jpg");
   background-size: cover;
   overflow: hidden;
+  background-color: #eee4e5;
 }
 
 .contacts-content {
@@ -1847,6 +1856,7 @@ body {
   display: block;
   width: 20px;
   height: 20px;
+  transition: opacity .2s ease;
 }
 
 .pagination-previous {
@@ -1864,6 +1874,33 @@ body {
   mask: url("../images/icons/arrow-right.svg");
   -webkit-mask: url("../images/icons/arrow-right.svg");
   background-color: #2d3440;
+  transition: background-color .2s ease;
+}
+
+.pagination-previous:hover::before,
+.pagination-next:hover::before {
+  background-color: #fcfcfc;
+}
+
+.pagination-previous:active,
+.pagination-next:active {
+  opacity: 0.4;
+}
+
+.pagination-previous:active::before,
+.pagination-next:active::before {
+  background-color: #fcfcfc;
+}
+
+.pagination-previous:focus-visible,
+.pagination-next:focus-visible {
+  outline: 2px solid #2d3440;
+}
+
+.pagination-previous:disabled,
+.pagination-next:disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 
