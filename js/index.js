@@ -1,3 +1,12 @@
+// СТИРАНИЕ ТЕКСТА В ПОЛЕ ПОИСКА ПО САЙТУ
+const searchInput = document.querySelector('.search-input');
+const searchResetButton = document.querySelector('.search-reset-button');
+searchResetButton.addEventListener('click', () => {
+  searchInput.value = '';
+  searchInput.focus();
+});
+
+
 // МОДАЛЬНОЕ ОКНО
 
 const modalOpen = document.querySelector('.contacts-button');

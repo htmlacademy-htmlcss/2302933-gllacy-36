@@ -226,6 +226,28 @@ body {
   pointer-events: none;
 }
 
+.link {
+  transition: opacity .2s ease;
+}
+
+.link:hover {
+  opacity: 0.6;
+}
+
+.link:active {
+  opacity: 0.3;
+}
+
+.link:focus-visible {
+  outline: 2px solid #2d3440;
+  outline-offset: 2px;
+}
+
+.link:disabled {
+  opacity: 0.1;
+  pointer-events: none;
+}
+
 /* ШАПКА */
 
 .page-header {
@@ -238,20 +260,6 @@ body {
 .logo-link {
   display: block;
   text-decoration: none;
-  transition: opacity .2s ease;
-}
-
-.logo-link:hover {
-  opacity: 0.6;
-}
-
-.logo-link:active {
-  opacity: 0.3;
-}
-
-.logo-link:focus-visible {
-  outline: 2px solid #2d3440;
-  outline-offset: 2px;
 }
 
 .logo {
@@ -356,6 +364,7 @@ body {
   text-decoration: none;
   font-weight: 700;
   color: #2d3440;
+  transition: opacity .3s ease;
 }
 
 .search-button {
@@ -399,6 +408,13 @@ body {
   appearance: none;
   width: 100%;
   padding: 13px 45px 13px 15px;
+}
+
+.search-input::-webkit-search-decoration,
+.search-input::-webkit-search-cancel-button,
+.search-input::-webkit-search-results-button,
+.search-input::-webkit-search-results-decoration {
+  appearance: none;
 }
 
 .search-reset-button {
@@ -585,18 +601,6 @@ body {
   transition: opacity .3s ease;
 }
 
-.cart-product-link:hover {
-  opacity: 0.6;
-}
-
-.cart-product-link:active {
-  opacity: 0.3;
-}
-
-.cart-product-link:focus-visible {
-  outline: 2px solid #2d3440;
-}
-
 .cart-product-price {
   font-weight: 700;
   font-size: 18px;
@@ -617,23 +621,6 @@ body {
   background-position: center;
   margin-left: 40px;
   transition: opacity .3s ease;
-}
-
-.cart-product-button:hover {
-  opacity: 0.6;
-}
-
-.cart-product-button:active {
-  opacity: 0.3;
-}
-
-.cart-product-button:focus-visible {
-  outline: 2px solid #2d3440;
-}
-
-.cart-product-button:disabled {
-  opacity: 0.1;
-  pointer-events: none;
 }
 
 .cart-bottom {
@@ -1395,19 +1382,6 @@ body {
   transition: opacity .2s ease;
 }
 
-.supplier-menu-link:hover {
-  opacity: 0.6;
-}
-
-.supplier-menu-link:active {
-  opacity: 0.3;
-}
-
-.supplier-menu-link:focus-visible {
-  outline: 2px solid #2d3440;
-  outline-offset: 2px;
-}
-
 .footer-right-column {
   display: flex;
   flex-direction: column;
@@ -1425,19 +1399,6 @@ body {
   color: inherit;
   text-underline-offset: 3px;
   transition: opacity .2s ease;
-}
-
-.footer-right-column-link:hover {
-  opacity: 0.6;
-}
-
-.footer-right-column-link:active {
-  opacity: 0.3;
-}
-
-.footer-right-column-link:focus-visible {
-  outline: 2px solid #2d3440;
-  outline-offset: 2px;
 }
 
 /* МОДАЛЬНОЕ ОКНО */
