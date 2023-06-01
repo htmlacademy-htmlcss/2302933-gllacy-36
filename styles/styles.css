@@ -71,7 +71,7 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-  max-width: 1366px;
+  width: 1366px;
   padding: 0 98px;
   margin: 0 auto;
 }
@@ -254,7 +254,6 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 24px 0;
-  align-items: center;
 }
 
 .logo-link {
@@ -358,6 +357,7 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   max-width: 500px;
+  align-self: flex-start;  
 }
 
 .page-phone {
@@ -625,6 +625,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding-top: 32px;
+  gap: 15px;
 }
 
 /* МЭЙН */
@@ -940,6 +941,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: auto;
 }
 
 .product-price {
@@ -947,6 +949,7 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #2d3440;
+  max-width: 150px;
 }
 
 .product-button {
@@ -1143,6 +1146,7 @@ body {
 
 .subscription-input {
   width: 100%;
+  min-width: 250px;
 }
 
 /* БЛОК ДОСТАВКИ */
@@ -1212,15 +1216,16 @@ body {
   font-size: 16px;
   line-height: 20px;
   color: #2d3440;
+  max-width: 80%;
 }
 
 .delivery-label {
   width: 100%;
+  margin-top: auto;
 }
 
 .delivery-input {
   width: 100%;
-  margin-top: auto;
 }
 
 .tooltip {
@@ -1465,6 +1470,7 @@ body {
   flex-direction: column;
   align-items: flex-start;
   gap: 14px;
+  max-width: 200px;
 }
 
 .footer-right-column-text {
@@ -1488,6 +1494,7 @@ body {
   min-width: 100%;
   min-height: 100%;
   background-color: rgba(45, 52, 64, 0.3);
+  z-index: 1;
 }
 
 .modal {
@@ -1702,6 +1709,8 @@ body {
   padding: 8px 25px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   gap: 16px;
   background: rgba(252, 252, 252, 0.3);
   border-radius: 18px;
@@ -1826,7 +1835,7 @@ body {
 .pagination {
   padding: 57px 0 41px;
   display: flex;
-  gap: 20px 335px;
+  gap: 20px 70px;
   justify-content: flex-end;
 }
 
@@ -1835,6 +1844,8 @@ body {
   padding: 0;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  max-width: 200px;
   align-items: center;
 }
 
@@ -1903,10 +1914,9 @@ body {
   pointer-events: none;
 }
 
-
 .pagination-link {
   display: block;
-  width: 24px;
+  min-width: 24px;
   padding: 2px 0;
   text-align: center;
   text-decoration: none;
@@ -1935,6 +1945,12 @@ body {
 .pagination-link-active {
   background-color: #fcfcfc;
   pointer-events: none;
+}
+
+.pagination-show-more {
+  align-self: flex-start;
+  margin-left: 489px;
+  margin-right: auto;
 }
 
 .hidden {
