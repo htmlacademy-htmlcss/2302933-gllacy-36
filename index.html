@@ -247,19 +247,33 @@
           <p class="delivery-form-text">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить заказ.</p>
           <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="delivery-inputs-container">
-              <label class="delivery-label delivery-date">
-                Дата
-                <input class="delivery-input main-input" type="text" name="delivery-date" placeholder="01.04.2020" aria-label="Введите дату доставки.">
-              </label>
-              <label class="delivery-label delivery-phone">
-                Телефон
-                <input class="delivery-input main-input" type="text" name="phone" placeholder="+7 800 999-00-00" aria-label="Введите номер телефона.">
+              <div class="delivery-label-container delivery-date">
+                <span class="delivery-input-title">Дата</span>
+                <div class="tooltip">
+                  <button class="tooltip-button" type="button" aria-labelledby="tooltip-date"></button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-date">Введите дату доставки</span>
+                </div>
+                <label class="delivery-label">
+                  <input class="main-input delivery-input" type="text" name="delivery-date" placeholder="01.04.2020" aria-label="Введите дату доставки.">
+                </label>
+              </div>
+              <div class="delivery-label-container delivery-phone">
+                <span class="delivery-input-title">Телефон</span>
+                <label class="delivery-label">
+                  <input class="main-input delivery-input" type="text" name="phone" placeholder="+7 800 999-00-00" aria-label="Введите номер телефона.">
+                </label>
+              </div>
+            </div>
+            <div class="delivery-label-container">
+              <span class="delivery-input-title">Адрес</span>
+              <div class="tooltip">
+                <button class="tooltip-button" type="button" aria-labelledby="tooltip-address"></button>
+                <span class="tooltip-text" role="tooltip" id="tooltip-address">Введите адрес доставки</span>
+              </div>
+              <label class="delivery-label">
+                <input class="main-input delivery-input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" aria-label="Введите адрес доставки.">
               </label>
             </div>
-            <label class="delivery-label">
-              Адрес
-              <input class="delivery-input main-input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" aria-label="Введите адрес доставки.">
-            </label>
             <button class="delivery-button button" type="submit">Отправить</button>
           </form>
         </div>
@@ -297,7 +311,7 @@
   </div>
   <div class="modal-container hidden">
     <div class="modal">
-      <button class="modal-close-button" type="button" aria-label="Закрыть модальное окно."></button>
+      <button class="modal-close-button link" type="button" aria-label="Закрыть модальное окно."></button>
       <span class="modal-title">Мы обязательно ответим вам!</span>
       <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="modal-label">
