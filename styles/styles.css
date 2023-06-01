@@ -655,6 +655,7 @@ body {
 
 .slider-container {
   position: relative;
+  overflow: hidden;
 }
 
 .slides {
@@ -662,7 +663,7 @@ body {
   padding: 21px 0 2px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
 }
 
 .slide {
@@ -671,6 +672,7 @@ body {
   align-items: center;
   gap: 24px;
   opacity: 0.4;
+  flex-shrink: 0;
 }
 
 .slide.slide-current {
@@ -1289,10 +1291,11 @@ body {
 .social-link {
   position: relative;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   border-radius: 50%;
-  outline: 2px solid rgba(252, 252, 252, 0.3);
+  border: 2px solid rgba(252, 252, 252, 0.3);
+  transition: all .3s ease;
 }
 
 .social-link::before {
@@ -1303,7 +1306,50 @@ body {
   width: 24px;
   height: 24px;
   background-color: #fcfcfc;
+  border-radius: 24px;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  transition: all .3s ease;
+}
+
+.social-link::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.8);
   border-radius: 50%;
+  background-color: #2d3440;
+  z-index: -1;
+  opacity: 0;
+  transition: all .3s ease;
+}
+
+.social-link:hover::after {
+  opacity: 1;
+}
+
+.social-link:active {
+  border-color: #fec3d2;
+}
+
+.social-link:active::before {
+  background-color: #fdd6e0;
+}
+
+.social-link:active::after {
+  background-color: #957282;
+}
+
+.social-link:focus-visible {
+  outline: none;
+  border-color: #2d3440;
+}
+
+.social-link:focus-visible::after {
+  opacity: 1;
 }
 
 .social-telegram::before {
@@ -1643,23 +1689,51 @@ body {
   display: block;
   width: 16px;
   height: 16px;
-  border: 2px solid #2d3440;
-  border-radius: 50%;
+  background-color: #2d3440;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  transition: all .2s ease;
 }
 
-.input-radio:checked + .control-mark::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 6px;
-  height: 6px;
-  background-color: #2d3440;
-  border-radius: 50%;
+.input-radio + .control-mark::before {
+  mask: url("../images/icons/input-radio.svg");
+  -webkit-mask: url("../images/icons/input-radio.svg");
+}
+
+.input-radio:checked + .control-mark::before {
+  mask: url("../images/icons/input-radio-active.svg");
+  -webkit-mask: url("../images/icons/input-radio-active.svg");
 }
 
 .input-checkbox + .control-mark::before {
-  border-radius: 3px;
+  mask: url("../images/icons/input-checkbox.svg");
+  -webkit-mask: url("../images/icons/input-checkbox.svg");
+}
+
+.input-checkbox:checked + .control-mark::before {
+  mask: url("../images/icons/input-checkbox-active.svg");
+  -webkit-mask: url("../images/icons/input-checkbox-active.svg");
+}
+
+.control:hover .control-mark::before {
+  background-color: #fcfcfc;
+}
+
+.control:active .control-mark::before {
+  background-color: #fcfcfc;
+  opacity: 0.6;
+}
+
+.control.control:focus-within .control-mark {
+  outline: 2px solid #2d3440;
+  outline-offset: 2px;
+}
+
+.control:has(.input-checkbox:disabled) .control-mark::before,
+.control:has(.input-radio:disabled) .control-mark::before {
+  background-color: #2d3440;
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .filter-form-button {
