@@ -248,6 +248,39 @@ body {
   pointer-events: none;
 }
 
+.popup-button {
+  border: 2px solid transparent;
+  transition: all .2s ease;
+}
+
+.popup-button:hover {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid transparent;
+}
+
+.popup-button:focus-visible {
+  background-color: rgba(252, 252, 252, 0.5);
+  border: 2px solid #000000;
+}
+
+.popup-button:active {
+  background-color: #fcfcfc;
+  border: 2px solid transparent;
+}
+
+.popup-container:focus-within .popup-button:not(focus) {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+  border: 2px solid transparent;
+}
+
+.popup-container:focus-within .popup-button:not(focus):hover {
+  background-color: #ff4a78;
+  color: #fcfcfc;
+  border: 2px solid transparent;
+  opacity: 0.6;
+}
+
 /* ШАПКА */
 
 .page-header {
@@ -321,6 +354,8 @@ body {
 }
 
 .catalog-menu {
+  margin: 0;
+  list-style: none;
   left: 0;
   top: calc(100% + 8px);
   width: 135px;
@@ -328,6 +363,7 @@ body {
 }
 
 .catalog-menu-link {
+  position: relative;
   display: block;
   text-decoration: none;
   width: 100%;
@@ -336,6 +372,22 @@ body {
   line-height: 20px;
   color: #2d3440;
   transition: background-color .3s ease;
+}
+
+.catalog-menu-link-accent {
+  padding: 8px 6px 8px 16px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.catalog-menu-link-accent::after {
+  position: absolute;
+  top: calc(100% + 4px);
+  content: "";
+  left: 16px;
+  right: 16px;
+  height: 1px;
+  background-color: #b9b9b9;
 }
 
 .catalog-menu-link-active {
@@ -357,7 +409,6 @@ body {
   flex-wrap: wrap;
   gap: 16px;
   max-width: 500px;
-  align-self: flex-start;  
 }
 
 .page-phone {
@@ -369,7 +420,6 @@ body {
 .search-button {
   position: relative;
   display: block;
-  border: none;
   padding: 0;
   cursor: pointer;
   background-color: rgba(252, 252, 252, 0.3);
@@ -381,8 +431,8 @@ body {
 .search-button::before {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 8px;
+  top: 5px;
+  left: 6px;
   width: 16px;
   height: 16px;
   mask: url("../images/icons/search.svg");
@@ -439,7 +489,6 @@ body {
 
 .login-button {
   position: relative;
-  border: none;
   cursor: pointer;
   padding: 6px 16px 6px 38px;
   background-color: rgba(252, 252, 252, 0.3);
@@ -518,7 +567,6 @@ body {
 
 .cart-button {
   position: relative;
-  border: none;
   cursor: pointer;
   padding: 6px 16px 6px 38px;
   background-color: rgba(252, 252, 252, 0.3);
