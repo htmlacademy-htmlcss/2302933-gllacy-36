@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <!-- Для добавления загрузки кнопки к классу "main-button" или "extra-button" нужно добавить класс "is-loading" -->
   <div class="page-container">
     <header class="page-header">
       <nav class="page-navigation">
@@ -63,7 +64,7 @@
               <label class="login-label">
                 <input class="login-input main-input" type="password" name="user-password" placeholder="••••••" aria-label="Введите пароль.">
               </label>
-              <button class="button-login button" type="submit">Войти</button>
+              <button class="button-login button extra-button" type="submit">Войти</button>
               <div class="login-links-container">
                 <a class="login-link forgot-password link" href="#">Забыли пароль?</a>
                 <a class="login-link registration link" href="#">Регистрация</a>
@@ -96,7 +97,7 @@
               </li>
             </ul>
             <div class="cart-bottom">
-              <a class="button" href="#">Оформить заказ</a>
+              <a class="button extra-button" href="#">Оформить заказ</a>
               <span class="cart-product-price price-sum">Итого: 790 ₽</span>
             </div>
           </div>
@@ -112,7 +113,7 @@
               <div class="slide-content">
                 <h2 class="slide-title title">Нежный пломбир с&nbsp;клубничным джемом</h2>
                 <p class="slide-description">Натуральное мороженое из свежих сливок и&nbsp;молока с вкуснейшим клубничным джемом – это&nbsp;идеальный десерт для всей семьи.</p>
-                <a class="slide-link main-button" href="#">Заказать</a>
+                <a class="slide-link main-button button is-loading" href="#">Заказать</a>
               </div>
               <div class="slide-image-container">
                 <img class="slide-image" src="./images/slider/ice-cream-1.jpg" alt="Нежный пломбир с клубничным джемом." width="327" height="507">
@@ -122,7 +123,7 @@
               <div class="slide-content">
                 <h2 class="slide-title title">Сливочное мороженое со&nbsp;вкусом банана</h2>
                 <p class="slide-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение даже в самый жаркий летний день.</p>
-                <a class="slide-link main-button" href="#">Заказать</a>
+                <a class="slide-link main-button button" href="#">Заказать</a>
               </div>
               <div class="slide-image-container">
                 <img class="slide-image" src="./images/slider/ice-cream-2.jpg" alt="Сливочное мороженое со вкусом банана." width="327" height="507">
@@ -132,7 +133,7 @@
               <div class="slide-content">
                 <h2 class="slide-title title">Карамельный пломбир с&nbsp;маршмеллоу</h2>
                 <p class="slide-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет сердца&nbsp;сладкоежек всех возрастов.</p>
-                <a class="slide-link main-button" href="#">Заказать</a>
+                <a class="slide-link main-button button" href="#">Заказать</a>
               </div>
               <div class="slide-image-container">
                 <img class="slide-image" src="./images/slider/ice-cream-3.jpg" alt="Карамельный пломбир с маршмеллоу." width="327" height="507">
@@ -163,12 +164,12 @@
           <div class="promo-card promo-card-raspberry">
             <h3 class="promo-card-title">Малинка даром!</h3>
             <p class="promo-card-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a class="main-button promo-card-button" href="#">Хочу подарок</a>
+            <a class="main-button promo-card-button button" href="#">Хочу подарок</a>
           </div>
           <div class="promo-card promo-card-marshmallow">
             <h3 class="promo-card-title">Маршмеллоу даром!</h3>
             <p class="promo-card-description">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-            <a class="main-button promo-card-button" href="#">Хочу подарок</a>
+            <a class="main-button promo-card-button button" href="#">Хочу подарок</a>
           </div>
         </div>
       </section>
@@ -233,7 +234,7 @@
             <label class="subscription-label">
               <input class="subscription-input main-input" type="text" name="subscription-email" placeholder="email@example.com" required>
             </label>
-            <button class="subscription-button button" type="submit">Отправить</button>
+            <button class="subscription-button button extra-button" type="submit">Отправить</button>
           </form>
         </section>
       </div>
@@ -273,7 +274,7 @@
                 <input class="main-input delivery-input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" aria-label="Введите адрес доставки.">
               </label>
             </div>
-            <button class="delivery-button button" type="submit">Отправить</button>
+            <button class="delivery-button button extra-button" type="submit">Отправить</button>
           </form>
         </div>
       </section>
@@ -284,7 +285,7 @@
           <span class="contacts-text">Для заказов по телефону:</span>
           <a class="contacts-phone link" href="tel:78128121212">+7 (812) 812-12-12</a>
           <span class="contacts-schedule">(с 10 до 20 ежедневно)</span>
-          <a class="contacts-button button" href="#">Форма обратной связи</a>
+          <a class="contacts-button button extra-button" href="#">Форма обратной связи</a>
         </div>
       </section>
     </main>
@@ -321,7 +322,7 @@
           <label class="modal-label">
             <textarea class="modal-textarea main-input" name="user-text" placeholder="В свободной форме" aria-label="Введите ваш текст в свободной форме."></textarea>
           </label>
-          <button class="modal-button button" type="submit">Отправить</button>
+          <button class="modal-button button extra-button" type="submit">Отправить</button>
         </form>
       </div>
     </div>

@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
+  <!-- Для добавления загрузки кнопки к классу "main-button" или "extra-button" нужно добавить класс "is-loading" -->
   <div class="page-container">
     <header class="page-header">
       <nav class="page-navigation">
@@ -63,7 +64,7 @@
               <label class="login-label">
                 <input class="login-input main-input" type="password" name="user-password" placeholder="••••••" aria-label="Введите пароль.">
               </label>
-              <button class="button-login button" type="submit">Войти</button>
+              <button class="button-login button extra-button" type="submit">Войти</button>
               <div class="login-links-container">
                 <a class="login-link forgot-password link" href="#">Забыли пароль?</a>
                 <a class="login-link registration link" href="#">Регистрация</a>
@@ -96,7 +97,7 @@
               </li>
             </ul>
             <div class="cart-bottom">
-              <a class="button" href="#">Оформить заказ</a>
+              <a class="button extra-button" href="#">Оформить заказ</a>
               <span class="cart-product-price price-sum">Итого: 790 ₽</span>
             </div>
           </div>
@@ -324,7 +325,7 @@
           </li>
         </ul>
         <div class="pagination">
-          <button class="pagination-show-more main-button" type="button">Показать еще</button>
+          <button class="pagination-show-more main-button button" type="button">Показать еще</button>
           <ul class="pagination-list">
             <li class="pagination-item pagination-item-previous">
               <button class="pagination-previous" type="button" aria-label="Назад." disabled></button>
