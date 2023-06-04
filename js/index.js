@@ -13,8 +13,21 @@ const modalOpen = document.querySelector('.contacts-button');
 const modalClose = document.querySelector('.modal-close-button');
 const modal = document.querySelector('.modal-container');
 
-modalOpen.addEventListener('click', () => {
+modalOpen.addEventListener('click', (evt) => {
+  evt.preventDefault();
   modal.classList.remove('hidden');
+});
+
+modal.addEventListener('click', (evt) => {
+  if (!evt.target.classList.contains('modal')) {
+    modal.classList.add('hidden');
+  }
+});
+
+document.addEventListener('keydown', (evt) => {
+  if (evt.key === 'Escape') {
+    modal.classList.add('hidden');
+  }
 });
 
 modalClose.addEventListener('click', () => {
