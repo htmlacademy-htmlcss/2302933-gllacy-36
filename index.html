@@ -72,9 +72,13 @@
             </form>
           </div>
         </div>
-        <div class="cart popup-container">
+        <!-- Для показа пустой корзины измените класс "cart-full" на "cart-empty" -->
+        <div class="cart cart-full">
           <button class="cart-button page-header-link popup-button" type="button" aria-label="Корзина." data-counter="2 товара"></button>
-          <div class="cart-content popup">
+          <div class="cart-empty-content popup">
+            <span class="cart-title cart-empty-title">Ваша корзина пока пуста</span>
+          </div>
+          <div class="cart-full-content popup">
             <span class="cart-title">Корзина</span>
             <ul class="cart-products">
               <li class="cart-product">
