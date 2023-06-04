@@ -100,7 +100,7 @@ body {
   text-decoration: none;
   border-radius: 26px;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  transition: all 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, outline-color 0.3s ease;
 }
 
 .is-loading {
@@ -185,6 +185,7 @@ body {
 .extra-button:focus-visible {
   background-color: #ff2f64;
   outline: 2px solid #2d3440;
+  outline-offset: -2px;
 }
 
 .extra-button:disabled {
@@ -294,10 +295,12 @@ body {
 .page-header {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 24px 0;
 }
 
 .logo-link {
+  color: inherit;
   display: block;
   text-decoration: none;
 }
@@ -308,12 +311,13 @@ body {
 
 .page-navigation {
   display: flex;
+  align-items: flex-start;
   gap: 16px;
 }
 
 .page-navigation-list {
   margin: 0;
-  padding: 0;
+  padding: 10px 0 0 0;
   list-style: none;
   display: flex;
   align-items: center;
@@ -424,14 +428,16 @@ body {
 }
 
 .page-user-menu {
+  align-items: flex-start;
+  padding-top: 12px;
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
   gap: 16px;
   max-width: 500px;
 }
 
 .page-phone {
+  padding-top: 5px;
   text-decoration: none;
   font-weight: 700;
   color: #2d3440;
@@ -642,16 +648,16 @@ body {
 }
 
 .cart-product-image {
-  width: 46px;
-  height: 46px;
   margin-right: 16px;
+  border-radius: 50%;
 }
 
 .cart-product-container {
   display: flex;
   flex-direction: column;
   gap: 4px;
-  max-width: 150px;
+  max-width: 130px;
+  margin-right: 10px;
 }
 
 .cart-product-link {
@@ -668,6 +674,7 @@ body {
   line-height: 22px;
   color: #2d3440;
   margin-left: auto;
+  max-width: 100px;
 }
 
 .cart-product-button {
@@ -681,6 +688,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   margin-left: 40px;
+  flex-shrink: 0;
 }
 
 .cart-bottom {
@@ -689,6 +697,13 @@ body {
   align-items: center;
   padding-top: 32px;
   gap: 15px;
+}
+
+.cart-price-sum {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #2d3440;
 }
 
 /* МЭЙН */
@@ -862,6 +877,8 @@ body {
   display: flex;
   gap: 8px;
   align-items: flex-end;
+  max-width: 200px;
+  flex-wrap: wrap;
 }
 
 .slider-pagination-button {
@@ -1201,7 +1218,6 @@ body {
 
 .subscription-form {
   display: flex;
-  align-items: center;
   gap: 18px;
 }
 
@@ -1212,6 +1228,10 @@ body {
 .subscription-input {
   width: 100%;
   min-width: 250px;
+}
+
+.subscription-button {
+  align-self: center;
 }
 
 /* БЛОК ДОСТАВКИ */
@@ -1416,6 +1436,8 @@ body {
 }
 
 .socials {
+  max-width: 200px;
+  flex-wrap: wrap;
   display: flex;
   gap: 12px;
 }
