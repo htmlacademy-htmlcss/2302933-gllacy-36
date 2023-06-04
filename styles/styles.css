@@ -1482,23 +1482,32 @@ body {
 }
 
 .supplier-menu {
-  margin: 0 auto;
   padding-left: 24px;
-  max-width: 356px;
-  display: flex;
-  flex-wrap: wrap;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 126px 182px;
   gap: 8px 24px;
-  background-image: url("../images/icons/heart.svg");
-  background-repeat: no-repeat;
-  background-position: left top 2px;
 }
 
 .supplier-menu-title {
+  position: relative;
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #2d3440;
   margin: 0;
+}
+
+.supplier-menu-title::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: -26px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icons/heart.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .supplier-menu-link {
