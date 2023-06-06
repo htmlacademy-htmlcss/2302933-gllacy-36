@@ -1888,11 +1888,10 @@ body {
   outline-offset: 2px;
 }
 
-.control:has(.input-checkbox:disabled) .control-mark::before,
-.control:has(.input-radio:disabled) .control-mark::before {
+.input-checkbox:disabled + .control-mark::before,
+.input-radio:disabled + .control-mark::before {
   background-color: #2d3440;
   opacity: 0.5;
-  pointer-events: none;
 }
 
 .filter-form-button {
@@ -1954,7 +1953,7 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  max-width: 200px;
+  max-width: 220px;
   align-items: center;
 }
 
