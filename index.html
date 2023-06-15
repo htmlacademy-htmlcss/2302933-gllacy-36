@@ -59,10 +59,10 @@
             <span class="login-title">Личный кабинет</span>
             <form class="login-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="login-label">
-                <input class="login-input main-input" type="email" name="user-email" placeholder="email@example.com" aria-label="Введите email.">
+                <input class="login-input main-input" type="email" name="user-email" placeholder="email@example.com" aria-label="Введите email." required>
               </label>
               <label class="login-label">
-                <input class="login-input main-input" type="password" name="user-password" placeholder="••••••" aria-label="Введите пароль.">
+                <input class="login-input main-input" type="password" name="user-password" placeholder="••••••" aria-label="Введите пароль."  required>
               </label>
               <button class="button-login button extra-button" type="submit">Войти</button>
               <div class="login-links-container">
@@ -260,13 +260,13 @@
                   <span class="tooltip-text" role="tooltip" id="tooltip-date">Введите дату доставки</span>
                 </div>
                 <label class="delivery-label">
-                  <input class="main-input delivery-input" type="text" name="delivery-date" placeholder="01.04.2020" aria-label="Введите дату доставки.">
+                  <input class="main-input delivery-input" type="text" name="delivery-date" placeholder="01.04.2020" aria-label="Введите дату доставки." required>
                 </label>
               </div>
               <div class="delivery-label-container delivery-phone">
                 <span class="delivery-input-title">Телефон</span>
                 <label class="delivery-label">
-                  <input class="main-input delivery-input" type="text" name="phone" placeholder="+7 800 999-00-00" aria-label="Введите номер телефона.">
+                  <input class="main-input delivery-input" type="text" name="phone" placeholder="+7 800 999-00-00" aria-label="Введите номер телефона." required>
                 </label>
               </div>
             </div>
@@ -277,7 +277,7 @@
                 <span class="tooltip-text" role="tooltip" id="tooltip-address">Введите адрес доставки</span>
               </div>
               <label class="delivery-label">
-                <input class="main-input delivery-input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" aria-label="Введите адрес доставки.">
+                <input class="main-input delivery-input" type="text" name="delivery-address" placeholder="ул. Большая Конюшенная, 19/8" aria-label="Введите адрес доставки." required>
               </label>
             </div>
             <button class="delivery-button button extra-button" type="submit">Отправить</button>
@@ -321,13 +321,13 @@
         <span class="modal-title">Мы обязательно ответим вам!</span>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="modal-label">
-            <input class="modal-input main-input" type="text" name="name and surname" placeholder="Имя и фамилия" aria-label="Введите имя и фамилию.">
+            <input class="modal-input main-input" type="text" name="name and surname" placeholder="Имя и фамилия" aria-label="Введите имя и фамилию." required>
           </label>
           <label class="modal-label">
-            <input class="modal-input main-input" type="email" name="user-email" placeholder="email@example.com" aria-label="Введите ваш email.">
+            <input class="modal-input main-input" type="email" name="user-email" placeholder="email@example.com" aria-label="Введите ваш email." required>
           </label>
           <label class="modal-label">
-            <textarea class="modal-textarea main-input" name="user-text" placeholder="В свободной форме" aria-label="Введите ваш текст в свободной форме."></textarea>
+            <textarea class="modal-textarea main-input" name="user-text" placeholder="В свободной форме" aria-label="Введите ваш текст в свободной форме." required></textarea>
           </label>
           <button class="modal-button button extra-button" type="submit">Отправить</button>
         </form>
