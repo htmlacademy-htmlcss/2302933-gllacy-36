@@ -519,7 +519,7 @@ body {
 .login-content-container {
   right: 0;
   top: calc(100% + 8px);
-  width: 480px;
+  width: 420px;
   padding: 48px 48px 52px 48px;
 }
 
@@ -1164,10 +1164,12 @@ body {
   background-image: url("../images/news/serving.jpg");
   overflow: hidden;
   background-size: cover;
+  background-position: bottom center;
   display: flex;
   flex-direction: column;
   gap: 12px;
   background-color: #fcfcfc;
+  max-width: 570px;
 }
 
 .news-text {
@@ -2059,6 +2061,7 @@ body {
   align-self: flex-start;
   margin-left: 489px;
   margin-right: auto;
+  max-width: 179px;
 }
 
 .hidden {
